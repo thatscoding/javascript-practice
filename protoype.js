@@ -54,6 +54,8 @@ console.log(arr);
 const array = new Array();
 console.log(array);
 
+// example 3
+
 // if you want toadd function or properties in stand prototype but you never change  standard
 // prototype of array's properties and fuctions
 
@@ -63,6 +65,7 @@ Array.prototype.show = function () {
 const cities = ["delhi"];
 console.log(cities);
 
+// example 4
 Array.prototype.convertIntoObj = function () {
   let newObj = {};
   this.forEach((item) => {
@@ -73,7 +76,7 @@ Array.prototype.convertIntoObj = function () {
 
 console.log(cities.convertIntoObj());
 
-//example 4
+//example 5
 
 function myPrototype(name) {
   return (this.name = name);
