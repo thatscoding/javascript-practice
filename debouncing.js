@@ -7,8 +7,8 @@ const getData = () => {
 
 const debounce = (callback, d) => {
   let timer;
-  return function () {
-    clearTimeout(timer);
+  return function (...args) {
+    if (timer) clearTimeout(timer);
     timer = setTimeout(() => {
       callback();
     }, d);
